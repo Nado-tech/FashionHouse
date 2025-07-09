@@ -13,11 +13,16 @@ body {
     align-items: center;
     padding: 15px 30px;
     background: #f8f8f8;
+    z-index: 1000;
+    /* so the top header stays on top of the page */
+    position: sticky;
+    top:0;
   }
   
   .logo {
     font-weight: 700;
     font-size: 24px;
+    
   }
   
   .search-bar {
@@ -120,15 +125,10 @@ body {
   }
   
   .outfit-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-10px);
   }
   
-  /* .outfit-card img {
-    width: 100%;
-    height: auto;
-    display: block;
-  } */
-  
+
   .outfit-card .info {
     padding: 15px;
     text-align: center;
@@ -157,55 +157,114 @@ body {
     object-fit: cover;
     display: block;
   }
-  
 
-  /* .formal-section {
+  .mini-intro {
+    font-size: 16px;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    line-height: 1.7;
+    font-weight: 300;
+  }
+
+  .badge {
+    position: absolute;
+    background: #b58900;
+    color: white;
+    padding: 4px 10px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 20px;
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  .style-tips {
+    margin-top: 60px;
+    padding: 30px;
+    background: #fafafa;
+    border-left: 3px solid #b58900;
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  }
+
+  .style-tips h3 {
+    margin-top: 0;
+    font-size: 20px;
+    color: #222;
+  }
+
+  .style-tips p {
+    font-size: 15px;
+    color: #444;
+    line-height: 1.6;
+  }
+
+  /* --- Shop Page --- */
+/* .shop-section {
     padding: 50px 30px;
-    background: #fdfdfd;
-    text-align: center;
+    background: #fff;
   }
   
-  .formal-section h2 {
-    font-size: 32px;
+  .product-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1000px;
+    margin: auto;
+    align-items: flex-start;
+  }
+  
+  .product-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .product-details {
+    flex: 1;
+    min-width: 280px;
+  }
+  
+  .product-details h2 {
+    font-size: 28px;
     margin-bottom: 10px;
   }
   
-  .tagline {
-    font-style: italic;
-    color: #666;
-    margin-bottom: 40px;
+  .product-details .price {
+    color: #b58900;
+    font-size: 22px;
+    margin-bottom: 20px;
+    font-weight: bold;
   }
   
-  .formal-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 30px;
-    justify-items: center;
+  .product-details .description {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 25px;
   }
   
-  .outfit-card {
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    padding: 15px;
-    transition: transform 0.3s ease;
+  .add-to-cart {
+    background: #111;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
   }
   
-  .outfit-card:hover {
-    transform: translateY(-5px);
-  }
-  
-  .outfit-card img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-  }
-  
-  .outfit-card p {
-    margin-top: 10px;
-    font-weight: 500;
+  .add-to-cart:hover {
+    background: #333;
   } */
-  
   
 
 
