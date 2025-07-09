@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Collection</title>
-    <link rel="stylesheet" href="collectionstyle.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fashion Home - YourBrand</title>
+  <link rel="stylesheet" href="../CSS/Home_page.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <!-- Top Header -->
+
+  <!-- Top Header -->
   <header class="top-header">
     <div class="logo">Fashion House</div>
     <input type="text" placeholder="I'm shopping for..." class="search-bar">
@@ -24,22 +29,70 @@
       <li><a href="#">Board of Trustees</a></li>
       <li><a href="#about">About Us</a></li>
       <li><a href="#contact">Contact</a></li>
+      <li><a href="#Events">Events</a></li>
+      <li><a href="#gallery">Gallery</a></li>
     </ul>
   </nav>
 
- <section id="collection">
-    <h2>Our Collection</h2>
-    <h3>Pick your look</h3>
-    <div class="collection-gallery">
-        <img src="trad6.jpg" alt="Our clothing collection" width="100%">
-        <img src="formal5.jpg" alt="Our clothing collection" width="100%">
-        <img src="casual3.jpg" alt="Our clothing collection" width="100%">
+  <!-- Hero Section -->
+  <section class="hero">
+    <img src="../IMAGES/Pictures/chioma_davido.jpeg" alt="Hero Image" class="hero-img">
+    <h1>Welcome to Fashion House !</h1>
+    <p>Explore African Designs | Formal | Casual | Corporate</p>
+  </section>
+
+  <!-- Events Preview -->
+  <section class="events">
+    <h2>Upcoming Events</h2>
+    <div class="event-grid">
+      <div class="event-box">
+        <img src="../IMAGES/Pictures/fashion_show.jpeg"> <br> <a href="#Events" span="image_event_link"></a> Our
+          upcoming runway event, Get ready to elevate your style at! <b>Fashion House</b>
+      </div>
+      <div class="event-box">
+        <img src="../IMAGES/Pictures/Upcoming.jpeg" alt="Upcoming Event">
+        <br>
+        <a href="#Events" class="image_event_link"></a> our fashion exhibition, showcasing the latest 
+        trends and designs from our talented designers.
+      </div>
     </div>
+    </div>
+      <button id class="more_events" onclick="window.location.href='#Events'">See All Events</button>
     
- </section>
+  </section>
+
+  <!-- Board of Trustees Preview -->
+  <section class="showcase">
+    <h2>Our Showcase</h2>
+    <div class="showcase-grid">
+      <div class="showcase-card"> <img src="../IMAGES/Pictures/Casual/casual1.jpg"> </div>
+      <div class="showcase-card"> <img src="../IMAGES/Pictures/Casual/casual2.jpg"> </div>
+      <div class="showcase-card"> <img src="../IMAGES/Pictures/Casual/casual3.jpg"> </div>
+      <div class="showcase-card"> <img src="../IMAGES/Pictures/Casual/casual4.jpg"> </div>
+      <div class="showcase-card"> <img src="../IMAGES/Pictures/Casual/casual5.jpg"> </div>
+      <div class="showcase-card"> <img src="../IMAGES/Pictures/Casual/casual6.jpg"> </div>
+      <div class="showcase-card"> <img src="../IMAGES/Pictures/Traditional/trad1.jpg"></div>
+      <div class="showcase-card"> <img src="../IMAGES/Pictures/Traditional/trad2.jpg"></div>
+      <div class="showcase-card"> <img src="../IMAGES/Pictures/Traditional/trad3.jpg"></div>
+      <div class="showcase-card"> <img src="../IMAGES/Pictures/Traditional/trad4.jpg"> </div>
+      <div class="showcase-card"> <img src="../IMAGES/Pictures/Traditional/trad5.jpg"> </div>
+      <div class="showcase-card"> <img src="../IMAGES/Pictures/Traditional/trad6.jpg"> </div>
+      <div class="showcase-card"> <img src="../IMAGES/Pictures/Traditional/trad7.jpg"> </div>
+      <div class="showcase-card"> <img src="../IMAGES/Pictures/Formal/formal1.jpg"> </div>
+      <div class="showcase-card"> <img src="../IMAGES/Pictures/Formal/formal2.jpg"> </div>
+      <div class="showcase-card"> <img src="../IMAGES/Pictures/Formal/formal3.jpg"> </div>
+      <div class="showcase-card"> <img src="../IMAGES/Pictures/Formal/formal4.jpg"> </div>
+      <div class="showcase-card"> <img src="../IMAGES/Pictures/Formal/formal5.jpg"> </div>
+      <div class="showcase-card"> <img src="../IMAGES/Pictures/Formal/formal6.jpg"> </div>
 
 
-   <!-- Footer: About + Contact -->
+
+
+
+    </div>
+  </section>
+
+  <!-- Footer: About + Contact -->
   <footer class="footer">
     <div id="about">
       <h3>About Us</h3>
@@ -52,6 +105,5 @@
   </footer>
 
 </body>
-    
-</body>
+
 </html>
