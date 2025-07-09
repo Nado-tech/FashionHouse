@@ -1,0 +1,225 @@
+/* Reset and base */
+body {
+    margin: 0;
+    font-family: 'Outfit', sans-serif;
+    background: #fff;
+    color: #333;
+  }
+  
+  /* Top header */
+  .top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: #f8f8f8;
+  }
+  
+  .logo {
+    font-weight: 700;
+    font-size: 24px;
+  }
+  
+  .search-bar {
+    flex: 1;
+    margin: 0 20px;
+    padding: 8px 15px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+  }
+  
+  .icons span {
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  /* Navigation */
+  .main-nav {
+    background: #111;
+  }
+  
+  .main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px 30px;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .main-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+
+  /* --- FORMAL SECTION --- */
+.formal-section {
+    padding: 50px 30px;
+    background: #fdfdfd;
+    text-align: center;
+  }
+  
+  .formal-section h2 {
+    font-size: 34px;
+    margin-bottom: 10px;
+  }
+  
+  /* .tagline {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 40px;
+  } */
+
+  .tagline {
+    font-style: italic;
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+    position: relative;
+  }
+  
+  .tagline::before,
+  .tagline::after {
+    content: "★★★";
+    color: #b58900;
+    font-size: 20px;
+    margin: 10px;
+  }
+  
+  
+  .formal-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    justify-items: center;
+  }
+  
+  .outfit-card {
+    text-decoration: none;
+    color: inherit;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    display: block;
+    width: 100%;
+    max-width: 280px;
+  }
+  
+  .outfit-card img {
+    width: 100%;
+    height: 300px; /* Choose your desired height */
+    object-fit: cover;
+    display: block;
+  }
+  
+  .outfit-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* .outfit-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+  } */
+  
+  .outfit-card .info {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .outfit-card .name {
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .outfit-card .price {
+    color: #666;
+    font-size: 16px;
+  }
+
+  .image-box {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+  }
+  
+  .image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+
+  /* .formal-section {
+    padding: 50px 30px;
+    background: #fdfdfd;
+    text-align: center;
+  }
+  
+  .formal-section h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  
+  .tagline {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 40px;
+  }
+  
+  .formal-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    justify-items: center;
+  }
+  
+  .outfit-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 15px;
+    transition: transform 0.3s ease;
+  }
+  
+  .outfit-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .outfit-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .outfit-card p {
+    margin-top: 10px;
+    font-weight: 500;
+  } */
+  
+  
+
+
+
+  
+/* Footer */
+.footer {
+    background: #111;
+    color: white;
+    padding: 40px 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer div {
+    width: 45%;
+  }
