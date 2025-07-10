@@ -24,7 +24,7 @@
 }
 
 .board-of-trustees .hero {
-  padding: 56px 20px;
+  padding: 48px 20px;
 }
 
 .board-of-trustees .hero h2 {
@@ -109,4 +109,31 @@
 
 .board-of-trustees li {
   line-height: 1.9rem;
+}
+
+.marquee-container {
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.marquee-text {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 15s linear infinite;
+}
+
+
+/**
+* scrolling animation.
+**/
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
