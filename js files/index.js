@@ -80,7 +80,13 @@ searchInput.addEventListener('keydown', function(e) {
   }
 });
 
-document.querySelector('.hero h1').textContent = "Welcome to Fashion House!";
+const heroSection = document.querySelector('.hero h1');
+
+if (document.contains(heroSection)) {
+  heroSection.textContent = "Welcome to Fashion House!";
+
+}
+
 
 document.addEventListener('DOMContentLoaded', function() {
   const dropdown = document.querySelector('.dropdown');
