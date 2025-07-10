@@ -254,13 +254,16 @@ width: 90%;
 }
 
 .board-of-trustees .hero {
-  background: #222;
-  color: #fff;
+  padding: 56px 20px;
 }
 
 .board-of-trustees .hero h2 {
   font-size: 2.2rem;
   margin-bottom: 4px;
+}
+
+.board-of-trustees .hero p {
+  color: #555;
 }
 
 .board-of-trustees .container p,
@@ -312,7 +315,8 @@ width: 90%;
   height: 88px;
   border-radius: 50%;
   object-fit: cover;
-  border: 2px solid #77aaff;
+  border: 5px solid var(--white);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
 }
 
 .board-of-trustees .trustee-card h3 {
