@@ -1,4 +1,9 @@
 /* Reset and base */
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: 'Outfit', sans-serif;
@@ -18,12 +23,25 @@ body {
     position: sticky;
     top:0;
   }
-  
+
   .logo {
     font-weight: 700;
     font-size: 24px;
-    
+    text-decoration: none;
+    color: #111;
+    cursor: pointer;
   }
+  
+  .logo:hover {
+    opacity: 0.8;
+  }
+  
+  
+  /* .logo {
+    font-weight: 700;
+    font-size: 24px;
+    
+  } */
 
   .marquee-container {
     background: #111;
@@ -86,12 +104,16 @@ body {
     padding: 10px 30px;
     display: flex;
     gap: 20px;
+    /* flex-wrap: wrap; so the navigation links wrap to the next line if they don't fit in one line */
   }
   
   .main-nav a {
     color: white;
     text-decoration: none;
     font-weight: 500;
+    /* font-size: 16px; */
+    /* transition: all 0.3s ease; */
+    /* padding: 6px 8px; */
   }
 
 
