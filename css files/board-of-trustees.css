@@ -24,7 +24,7 @@
 }
 
 .board-of-trustees .hero {
-  padding: 48px 20px;
+  padding: 72px 20px;
 }
 
 .board-of-trustees .hero h2 {
@@ -33,12 +33,12 @@
 }
 
 .board-of-trustees .hero p {
-  color: #555;
+  color: #777;
 }
 
 .board-of-trustees .container p,
 .board-of-trustees .container li {
-  color: #555;
+  color: #777;
 }
 
 .board-of-trustees hr {
@@ -48,7 +48,7 @@
 }
 
 .card {
-  background: var(--white);
+background: var(--white);
   padding: 16px 32px 24px;
   margin-bottom: 20px;
   border-radius: 8px;
@@ -67,7 +67,7 @@
 .trustee-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
+  gap: 24px;
 }
 
 .board-of-trustees .trustee-card {
