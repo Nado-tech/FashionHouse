@@ -24,7 +24,7 @@
 }
 
 .board-of-trustees .hero {
-  padding: 48px 20px;
+  padding: 72px 20px;
 }
 
 .board-of-trustees .hero h2 {
@@ -33,12 +33,12 @@
 }
 
 .board-of-trustees .hero p {
-  color: #555;
+  color: #777;
 }
 
 .board-of-trustees .container p,
 .board-of-trustees .container li {
-  color: #555;
+  color: #777;
 }
 
 .board-of-trustees hr {
