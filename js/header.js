@@ -17,17 +17,17 @@ export default function header () {
     <nav class="main-nav">
       <ul>
         <li class="dropdown">
-          <a href="collection.html">Collections</a>
+          <a href="/html files/collection.html">Collections</a>
           <ul class="dropdown-menu">
-            <li><a href="Traditional.html">Traditional</a></li>
-            <li><a href="formal.html">Formal</a></li>
-            <li><a href="casual.html">Casual</a></li>
+            <li><a href="/html files/Traditional.html">Traditional</a></li>
+            <li><a href="/html files/formal.html">Formal</a></li>
+            <li><a href="/html files/casual.html">Casual</a></li>
           </ul>
         </li>
-        <li><a href="board-of-trustees.html">Board of Trustees</a></li>
+        <li><a href="/html files/board-of-trustees.html">Board of Trustees</a></li>
         <li><a href="#about">About Us</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><a href="events.html">Events</a></li>
+        <li><a href="/html files/events.html">Events</a></li>
         <li><a href="#gallery">Gallery</a></li>
       </ul>
     </nav>
