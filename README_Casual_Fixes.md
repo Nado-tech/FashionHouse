@@ -7,7 +7,7 @@ The casual pages weren't showing properly because the files couldn't find the ri
 
 ### 1. Fixed the styling (CSS) links
 - **Before**: The pages were looking for styling in the wrong folder
-- **After**: Now they look in the correct folder (`CSS files/`)
+- **After**: Now they look in the correct folder (`css/`)
 
 ### 2. Fixed the picture links  
 - **Before**: The pages were looking for pictures in the wrong folder

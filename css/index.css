@@ -177,6 +177,11 @@ width: 90%;
   transition: background-color 0.3s ease; 
 }
 
+.more_events a {
+  color: #fff;
+  text-decoration: none;
+}
+
 .more_events:hover {
   background-color: #3e8e41; 
 }
