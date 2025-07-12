@@ -1,13 +1,3 @@
-<!--group Project/
-│
-├── index.html
-├── css/
-│   └── style.css
-├── js/
-│   └── script.js
-└── images/
-    └── photo.jpg-->
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,43 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fashion Home - YourBrand</title>
-  <link rel="stylesheet" href="../CSS/home_page.css">
+  <link rel="stylesheet" href="../CSS/index.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
-  <header class="top-header">
-    <a href="../HTML/home_page.html" class="logo">Fashion House</a>
-    <input type="text" id="site-search" placeholder="I'm shopping for..." class="search-bar" autocomplete="off">
-    <div id="search-dropdown" class="search-dropdown"></div>
-    <div class="icons">
-      <span>🔍</span>
-      <span>🛒</span>
-    </div>
-  </header>
-
-  <nav class="main-nav">
-    <ul>
-      <li class="dropdown">
-        <a href="#">Collections</a>
-        <ul class="dropdown-menu">
-          <li><a href="#traditional">Traditional</a></li>
-          <li><a href="corporate.html">Formal</a></li>
-          <li><a href="casual.html">Casual</a></li>
-        </ul>
-      </li>
-      <li><a href="#">Board of Trustees</a></li>
-      <li><a href="about_us.html">About Us</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="#Events">Events</a></li>
-      <li><a href="#gallery">Gallery</a></li>
-    </ul>
-  </nav>
-
   <section class="hero">
-    <img src="../IMAGES/Pictures/chioma_davido.jpeg" alt="Hero Image" class="hero-img">
+    <img src="../Pictures/chioma_davido.jpg" alt="Hero Image" class="hero-img">
     <h1>Welcome to Fashion House !</h1>
     <p>Explore African Designs | Formal | Casual | Corporate</p>
   </section>
@@ -60,45 +21,44 @@
     <h2>Upcoming Events</h2>
     <div class="event-grid">
       <div class="event-box">
-        <img src="../IMAGES/Pictures/fashion_show.jpeg" alt="event pic"> <br> <a href="#Events"
-          span="image_event_link"></a> Our
-        upcoming runway event, Get ready to elevate your style at! <b>Fashion House</b>
+        <img src="../Pictures/fashion_show.jpg" alt="event pic"> <br> <a href="#Events" span="image_event_link"></a> Our
+          upcoming runway event, Get ready to elevate your style at! <b>Fashion House</b>
       </div>
       <div class="event-box">
-        <img src="../IMAGES/Pictures/Upcoming.jpeg" alt="Upcoming Event">
+        <img src="../Pictures/upcoming.jpg" alt="Upcoming Event">
         <br>
-        <a href="#Events" class="image_event_link"></a> our fashion exhibition, showcasing the latest
+        <a href="#Events" class="image_event_link"></a> our fashion exhibition, showcasing the latest 
         trends and designs from our talented designers.
       </div>
     </div>
     </div>
-    <button id class="more_events" onclick="window.location.href='#Events'">See All Events</button>
-
+      <button id class="more_events"><a href="events.html">See All Events</a></button>
+    
   </section>
 
   <!-- Board of Trustees Preview -->
   <section class="showcase">
     <h2>Our Showcase</h2>
     <div class="showcase-grid">
-      <div class="showcase-card"> <img src="../IMAGES/Pictures/Casual/casual1.jpg" lazy> </div>
-      <div class="showcase-card"> <img src="../IMAGES/Pictures/Casual/casual2.jpg" lazy> </div>
-      <div class="showcase-card"> <img src="../IMAGES/Pictures/Casual/casual3.jpg" lazy> </div>
-      <div class="showcase-card"> <img src="../IMAGES/Pictures/Casual/casual4.jpg" lazy> </div>
-      <div class="showcase-card"> <img src="../IMAGES/Pictures/Casual/casual5.jpg" lazy> </div>
-      <div class="showcase-card"> <img src="../IMAGES/Pictures/Casual/casual6.jpg" lazy> </div>
-      <div class="showcase-card"> <img src="../IMAGES/Pictures/Traditional/trad1.jpg" lazy> </div>
-      <div class="showcase-card"> <img src="../IMAGES/Pictures/Traditional/trad2.jpg" lazy> </div>
-      <div class="showcase-card"> <img src="../IMAGES/Pictures/Traditional/trad3.jpg" lazy> </div>
-      <div class="showcase-card"> <img src="../IMAGES/Pictures/Traditional/trad4.jpg" lazy> </div>
-      <div class="showcase-card"> <img src="../IMAGES/Pictures/Traditional/trad5.jpg" lazy> </div>
-      <div class="showcase-card"> <img src="../IMAGES/Pictures/Traditional/trad6.jpg" lazy> </div>
-      <div class="showcase-card"> <img src="../IMAGES/Pictures/Traditional/trad7.jpg" lazy> </div>
-      <div class="showcase-card"> <img src="../IMAGES/Pictures/Formal/formal1.jpg" lazy> </div>
-      <div class="showcase-card"> <img src="../IMAGES/Pictures/Formal/formal2.jpg" lazy> </div>
-      <div class="showcase-card"> <img src="../IMAGES/Pictures/Formal/formal3.jpg" lazy> </div>
-      <div class="showcase-card"> <img src="../IMAGES/Pictures/Formal/formal4.jpg" lazy> </div>
-      <div class="showcase-card"> <img src="../IMAGES/Pictures/Formal/formal5.jpg" lazy> </div>
-      <div class="showcase-card"> <img src="../IMAGES/Pictures/Formal/formal6.jpg" lazy> </div>
+      <div class="showcase-card"> <img src="../Pictures/Casual/casual1.jpg"> </div>
+      <div class="showcase-card"> <img src="../Pictures/Casual/casual2.jpg"> </div>
+     <div class="showcase-card"> <img src="../Pictures/Casual/casual3.jpg"> </div>
+     <div class="showcase-card"> <img src="../Pictures/Casual/casual4.jpg"> </div>
+      <div class="showcase-card"> <img src="../Pictures/Casual/casual5.jpg"> </div>
+      <div class="showcase-card"> <img src="../Pictures/Casual/casual6.jpg"> </div>
+      <div class="showcase-card"> <img src="../Pictures/Traditional/trad1.jpg"> </div>
+      <div class="showcase-card"> <img src="../Pictures/Traditional/trad2.jpg"> </div>
+      <div class="showcase-card"> <img src="../Pictures/Traditional/trad3.jpg"> </div>
+      <div class="showcase-card"> <img src="../Pictures/Traditional/trad4.jpg"> </div>
+      <div class="showcase-card"> <img src="../Pictures/Traditional/trad5.jpg"> </div>
+      <div class="showcase-card"> <img src="../Pictures/Traditional/trad6.jpg"> </div>
+      <div class="showcase-card"> <img src="../Pictures/Traditional/trad7.jpg"> </div>
+      <div class="showcase-card"> <img src="../Pictures/Formal/formal1.jpg"> </div>
+      <div class="showcase-card"> <img src="../Pictures/Formal/formal2.jpg"> </div>
+      <div class="showcase-card"> <img src="../Pictures/Formal/formal3.jpg"> </div>
+      <div class="showcase-card"> <img src="../Pictures/Formal/formal4.jpg"> </div>
+      <div class="showcase-card"> <img src="../Pictures/Formal/formal5.jpg"> </div>
+      <div class="showcase-card"> <img src="../Pictures/Formal/formal6.jpg"> </div>
 
 
 
@@ -120,6 +80,6 @@
   </footer>
 
 </body>
-<script src="../js files/index.js"></script>
-
+<script src="../js/header.js" type="module"></script> <!-- include this to inject header to page -->
+<script src="../js/index.js" type="module"></script>
 </html>

@@ -112,8 +112,9 @@ body {
 }
 
 .hero-img {
+  object-position: top;
   width: 100%;
-  max-height: 400px;
+  max-height: 480px;
   object-fit: cover;
 }
 .hero h1 {
@@ -177,6 +178,11 @@ width: 90%;
   transition: background-color 0.3s ease; 
 }
 
+.more_events a {
+  color: #fff;
+  text-decoration: none;
+}
+
 .more_events:hover {
   background-color: #3e8e41; 
 }
@@ -237,103 +243,4 @@ width: 90%;
   background: yellow;
   color: #222;
   border-radius: 2px;
-}
-
-/**
-* page for board of trustess.
-**/
-
-:root {
-  --blue: #0056b3;
-  --white: #fff;
-  --off-white: #f9f9f9;
-}
-
-.board-of-trustees {
-  -webkit-font-smoothing: antialiased;
-  line-height: 1.6rem;
-}
-
-.board-of-trustees .hero {
-  background: #222;
-  color: #fff;
-}
-
-.board-of-trustees .hero h2 {
-  font-size: 2.2rem;
-  margin-bottom: 4px;
-}
-
-.board-of-trustees .container p,
-.board-of-trustees .container li {
-  color: #555;
-}
-
-.board-of-trustees hr {
-  background: #ddd;
-  border: none;
-  height: 1px;
-}
-
-.card {
-  background: var(--white);
-  padding: 16px 32px 24px;
-  margin-bottom: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.board-of-trustees .container {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  margin: 0 auto;
-  padding: 40px 40px;
-  max-width: 1600px;
-}
-
-.trustee-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
-}
-
-.board-of-trustees .trustee-card {
-  background: var(--off-white);
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 15px;
-  text-align: center;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-  margin-top: 16px;
-}
-
-.board-of-trustees .trustee-card img {
-  width: 88px;
-  height: 88px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 2px solid #77aaff;
-}
-
-.board-of-trustees .trustee-card h3 {
-  margin: 10px 0 5px;
-  color: var(--blue);
-}
-
-.board-of-trustees .trustee-card p {
-  margin: 0;
-  font-size: 0.9em;
-  line-height: 1.4rem;
-  color: #555;
-}
-
-.board-of-trustees .trustee-card .title {
-  font-weight: bold;
-  color: #333;
-  margin-bottom: 5px;
-}
-
-.board-of-trustees li {
-  line-height: 1.9rem;
 }
