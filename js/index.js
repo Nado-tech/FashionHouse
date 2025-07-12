@@ -23,60 +23,63 @@ function highlightSearch(query) {
   });
 }
 
-const searchInput = document.getElementById('site-search');
-const searchDropdown = document.getElementById('search-dropdown');
+document.addEventListener('DOMContentLoaded', function() {
+  const searchInput = document.getElementById('site-search');
+  const searchDropdown = document.getElementById('search-dropdown');
 
-function getSearchableItems() {
-  const items = [];
-  document.querySelectorAll('h2, h3, p, .event-box, .showcase-card').forEach(el => {
-    const text = el.textContent.trim();
-    if (text) items.push({ text, el });
-  });
-  return items;
-}
-
-if (document.contains(searchInput)) {
-  searchInput.addEventListener('input', function() {
-    const query = this.value.trim().toLowerCase();
-    searchDropdown.innerHTML = '';
-    if (!query) {
-      searchDropdown.style.display = 'none';
-      return;
-    }
-    const items = getSearchableItems();
-    const matches = items.filter(item => item.text.toLowerCase().includes(query));
-    if (matches.length === 0) {
-      searchDropdown.style.display = 'none';
-      return;
-    }
-    matches.slice(0, 8).forEach(item => {
-      const div = document.createElement('div');
-      div.className = 'dropdown-item';
-      div.innerHTML = item.text.replace(
-        new RegExp(`(${query})`, 'ig'),
-        '<span class="search-highlight">$1</span>'
-      );
-      div.onclick = () => {
-        item.el.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        searchDropdown.style.display = 'none';
-      };
-      searchDropdown.appendChild(div);
+  function getSearchableItems() {
+    const items = [];
+    document.querySelectorAll('h2, h3, p, .event-box, .showcase-card').forEach(el => {
+      const text = el.textContent.trim();
+      if (text) items.push({ text, el });
     });
-    searchDropdown.style.display = 'block';
-  });
+    return items;
+  }
 
-  searchInput.addEventListener('keydown', function(e) {
-    if (e.key === 'Enter') {
-      highlightSearch(searchInput.value.trim().toLowerCase());
+  if (document.contains(searchInput)) {
+    searchInput.addEventListener('input', function() {
+      const query = this.value.trim().toLowerCase();
+      searchDropdown.innerHTML = '';
+      if (!query) {
+        searchDropdown.style.display = 'none';
+        return;
+      }
+      const items = getSearchableItems();
+      const matches = items.filter(item => item.text.toLowerCase().includes(query));
+      if (matches.length === 0) {
+        searchDropdown.style.display = 'none';
+        return;
+      }
+      matches.slice(0, 8).forEach(item => {
+        const div = document.createElement('div');
+        div.className = 'dropdown-item';
+        div.innerHTML = item.text.replace(
+          new RegExp(`(${query})`, 'ig'),
+          '<span class="search-highlight">$1</span>'
+        );
+        div.onclick = () => {
+          item.el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          searchDropdown.style.display = 'none';
+        };
+        searchDropdown.appendChild(div);
+      });
+      searchDropdown.style.display = 'block';
+    });
+
+    searchInput.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter') {
+        highlightSearch(searchInput.value.trim().toLowerCase());
+      }
+    });
+  }
+
+
+  document.addEventListener('click', function(e) {
+    if (!searchInput.contains(e.target) && !searchDropdown.contains(e.target)) {
+      searchDropdown.style.display = 'none';
     }
   });
-}
-
-document.addEventListener('click', function(e) {
-  if (!searchInput.contains(e.target) && !searchDropdown.contains(e.target)) {
-    searchDropdown.style.display = 'none';
-  }
-});
+})
 
 //searchBtn.addEventListener('click', function() {
   //highlightSearch(searchInput.value.trim().toLowerCase());

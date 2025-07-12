@@ -2,6 +2,7 @@ export default function header () {
   const root = document.createElement('div');
   root.style.position = 'sticky';
   root.style.top = '0';
+  root.style.zIndex = '50';
 
   root.innerHTML = `
     <header class="top-header">
