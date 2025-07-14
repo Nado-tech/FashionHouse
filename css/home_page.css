@@ -142,7 +142,7 @@ body {
 }
 .event-box img {
 width: 90%;
-  max-height: 400px;
+  max-height: 280px;
   object-fit: cover;
   align-self: center;
   padding: 10px;
