@@ -39,7 +39,7 @@ export default function header () {
   
     root.innerHTML = `
       <header class="top-header">
-      <a href="index.html" class="logo">Fashion House</a>
+      <a href="/" class="logo">Fashion House</a>
         <input type="text" id= "site-search" placeholder="I'm shopping for..." class="search-bar" autocomplete="off">
         <div id="search-dropdown" class="search-dropdown"></div>
         <div class="icons">
@@ -50,7 +50,7 @@ export default function header () {
   
       <nav class="main-nav">
         <ul>
-        <li><a href="index.html">Home</a></li>
+        <li><a href="/">Home</a></li>
           <li class="dropdown">
             <a href="/html files/collection.html">Collections</a>
             <ul class="dropdown-menu">
