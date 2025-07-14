@@ -273,3 +273,13 @@ width: 90%;
   color: #222;
   border-radius: 2px;
 }
+
+.page-marquee {
+  background-color: #111;
+  color: #fff;
+  padding: 12px 0;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+}
