@@ -52,12 +52,12 @@
 
 **To Pull Latest Changes:**
 1. Open your terminal and make sure you are in the the project directory or press ctrl + ` if you are already in VS Code.
-2. Run: `git pull origin main`
+2. Run: `git pull origin [BRANCH-NAME]`
 
 **To Push Your Changes:**
 1. Stage your changes: `git add .`
 2. Commit your changes: `git commit -m "Your commit message"`
-3. Push to GitHub: `git push origin main`
+3. Push to GitHub: `git push origin [BRANCH-NAME]`
 
 **Note:**
 - Always pull the latest changes before you start working and before you push your own changes to avoid conflicts.
