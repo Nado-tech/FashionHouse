@@ -5,7 +5,7 @@ export default function footer() {
     <div id="about">
       <h3>About Us</h3>
       <p>We are a creative fashion house blending African heritage with modern trends.</p>
-      <a href="about_us.html" class="about-link">Learn More</a>
+      <a href="../html files/about_us.html" class="about-link">Learn More</a>
     </div>
     <div id="contact">
       <h3>Contact Us</h3>

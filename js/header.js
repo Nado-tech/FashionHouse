@@ -49,19 +49,19 @@ export default function header () {
       "Own the moment in tailored elegance • From day to night, let your style do the talking |✨ Members-only sale coming soon •",
       "Upgrade your wardrobe! Get 10% off all classic suits this month. Dress sharp, feel sharper."
     ];
-    const currentPage = window.location.pathname.split('/').pop() || '';
+    const currentPage = (window.location.pathname.split('/').pop() || '').toLowerCase();
     let selectedMessage;
     if (currentPage.includes('sleek_shop')) {
       selectedMessage = marqueeMessages[1];
-    } else if (currentPage.includes('Satin_shop')) {
+    } else if (currentPage.includes('satin_shop')) {
       selectedMessage = marqueeMessages[2];
-    } else if (currentPage.includes('P_shop')) {
+    } else if (currentPage.includes('s_shop')) {
       selectedMessage = marqueeMessages[3];
-    } else if (currentPage.includes('N_shop')) {
+    } else if (currentPage.includes('n_shop')) {
       selectedMessage = marqueeMessages[4];
-    } else if (currentPage.includes('E_shop')) {
+    } else if (currentPage.includes('e_shop')) {
       selectedMessage = marqueeMessages[5];
-    } else if (currentPage.includes('C_shop')) {
+    } else if (currentPage.includes('c_shop')) {
       selectedMessage = marqueeMessages[6];
     } else {
       selectedMessage = marqueeMessages[0];
