@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="../CSS/index.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 </head>
 
 <body>
@@ -15,27 +17,33 @@
     <img src="../Pictures/chioma_davido.jpg" alt="Hero Image" class="hero-img">
     <div class="text">
       <h1>Welcome to Fashion House !</h1>
-      <p>Explore African Designs | Formal | Casual | Corporate</p>
+      <p>Explore African Designs | Corporate | Casual | Traditional</p>
     </div>
   </section>
 
-  <section class="events">
+  <section class="events events-home">
     <h2>Upcoming Events</h2>
-    <div class="event-grid">
-      <div class="event-box">
-        <img src="../Pictures/fashion_show.jpg" alt="event pic"> <br> <a href="#Events" span="image_event_link"></a> Our
-          upcoming runway event, Get ready to elevate your style at! <b>Fashion House</b>
+    <div class="events-grid">
+      <div class="event-item">
+        <img src="../Pictures/events/spring-fall-collection.jpg" alt="Spring Collection Fashion Show" class="event-image">
+        <div class="event-details">
+          <h3>Spring Collection Fashion Show</h3>
+          <div class="event-date">August 15, 2025 • 7:00 PM</div>
+          <div class="event-location">Lagos Fashion Week Venue, Victoria Island</div>
+        </div>
       </div>
-      <div class="event-box">
-        <img src="../Pictures/upcoming.jpg" alt="Upcoming Event">
-        <br>
-        <a href="#Events" class="image_event_link"></a> our fashion exhibition, showcasing the latest 
-        trends and designs from our talented designers.
+      <div class="event-item">
+        <img src="../Pictures/events/africa-fashion-exhibition.png" alt="African Fashion Exhibition" class="event-image">
+        <div class="event-details">
+          <h3>African Fashion Exhibition</h3>
+          <div class="event-date">July 20, 2025 • 10:00 AM - 6:00 PM</div>
+          <div class="event-location">National Museum, Lagos</div>
+        </div>
       </div>
     </div>
+    <div style="text-align:right; margin-top: 18px;">
+      <a href="./html files/events.html" class="see-all-events">See All Events</a>
     </div>
-      <button id class="more_events"><a href="events.html">See All Events</a></button>
-    
   </section>
 
   <!-- Board of Trustees Preview -->
@@ -55,12 +63,12 @@
       <div class="showcase-card"> <img src="../Pictures/Traditional/trad5.jpg"> </div>
       <div class="showcase-card"> <img src="../Pictures/Traditional/trad6.jpg"> </div>
       <div class="showcase-card"> <img src="../Pictures/Traditional/trad7.jpg"> </div>
-      <div class="showcase-card"> <img src="../Pictures/Formal/formal1.jpg"> </div>
-      <div class="showcase-card"> <img src="../Pictures/Formal/formal2.jpg"> </div>
-      <div class="showcase-card"> <img src="../Pictures/Formal/formal3.jpg"> </div>
-      <div class="showcase-card"> <img src="../Pictures/Formal/formal4.jpg"> </div>
-      <div class="showcase-card"> <img src="../Pictures/Formal/formal5.jpg"> </div>
-      <div class="showcase-card"> <img src="../Pictures/Formal/formal6.jpg"> </div>
+      <div class="showcase-card"> <img src="../Pictures/Formal/formal1.jpeg"> </div>
+      <div class="showcase-card"> <img src="../Pictures/Formal/formal2.jpeg"> </div>
+      <div class="showcase-card"> <img src="../Pictures/Formal/formal3.jpeg"> </div>
+      <div class="showcase-card"> <img src="../Pictures/Formal/formal4.jpeg"> </div>
+      <div class="showcase-card"> <img src="../Pictures/Formal/formal5.jpeg"> </div>
+      <div class="showcase-card"> <img src="../Pictures/Formal/formal 6.jpeg"> </div>
 
 
 
@@ -69,19 +77,6 @@
     </div>
   </section>
 
-  <footer class="footer">
-    <div id="about">
-      <h3>About Us</h3>
-      <p>We are a creative fashion house blending African heritage with modern trends.</p>
-      <a href="about_us.html" class="about-link">Learn More</a>
-    </div>
-    <div id="contact">
-      <h3>Contact Us</h3>
-      <p>Phone: +123-456-7890<br>Email: contact@yourbrand.com<br>Location: Lagos, Nigeria</p>
-    </div>
-  </footer>
-
+  <script src="../js/layout.js" type="module"></script> <!-- include this to inject header and footer to page -->
 </body>
-<script src="../js/header.js" type="module"></script> <!-- include this to inject header to page -->
-<script src="../js/index.js" type="module"></script>
 </html>

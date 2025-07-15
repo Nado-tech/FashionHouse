@@ -3,7 +3,6 @@
 * inherit base styles from index.css
 **/
 
-@import url('./index.css');
 
 
 /* Events Page Styles Start*/
@@ -26,8 +25,8 @@
     margin: 0 auto 30px;
 }
 
-.events-container {
-    padding: 40px 30px;
+.events-container, .events-home {
+    padding: 40px 30px !important;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -231,9 +230,30 @@
     display: block !important;
 }
 
+.see-all-events {
+  display: inline-block;
+  background: #676d67;
+  color: #fff;
+  padding: 10px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-top: 18px;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  border: none;
+}
+
+.see-all-events:hover {
+  background: #676d67;
+  color: #fff;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+
 @media (max-width: 768px) {
-    .events-container {
-        padding: 20px 15px;
+    .events-container, .events-home {
+        padding: 20px 15px !important;
     }
 
     .events-grid {
@@ -282,7 +302,3 @@
 }
 
 /* Events Page Styles End */
-
-.main-nav ul {
-    flex-wrap: wrap;
-  }

@@ -1,8 +1,43 @@
 export default function header () {
-    const root = document.createElement('div');
-    root.style.position = 'sticky';
-    root.style.top = '0';
-    root.style.zIndex = '50';
+    // Remove wrapper div, inject header, nav, and marquee directly
+    const headerEl = document.createElement('header');
+    headerEl.className = 'top-header';
+    headerEl.innerHTML = `
+      <a href="/" class="logo">Fashion House</a>
+      <input type="text" id= "site-search" placeholder="I'm shopping for..." class="search-bar" autocomplete="off">
+      <div id="search-dropdown" class="search-dropdown"></div>
+      <div class="icons">
+        <span>🔍</span>
+        <span>🛒</span>
+      </div>
+    `;
+
+    const navEl = document.createElement('nav');
+    navEl.className = 'main-nav';
+    navEl.innerHTML = `
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li class="dropdown">
+          <a href="/html files/collection.html">Collections</a>
+          <ul class="dropdown-menu">
+            <li><a href="/html files/Traditional.html">Traditional</a></li>
+            <li><a href="/html files/corporate.html">Corporate</a></li>
+            <li><a href="/html files/casual.html">Casual</a></li>
+          </ul>
+        </li>
+        <li><a href="/html files/board-of-trustees.html">Board of Trustees</a></li>
+        <li><a href="/html files/about_us.html">About Us</a></li>
+        <li><a href="/html files/contact.html">Contact</a></li>
+        <li><a href="/html files/events.html">Events</a></li>
+        <li><a href="/html files/gallery.html">Gallery</a></li>
+      </ul>
+    `;
+
+    const marqueeEl = document.createElement('marquee');
+    marqueeEl.className = 'page-marquee';
+    marqueeEl.setAttribute('behavior', 'scroll');
+    marqueeEl.setAttribute('direction', 'left');
+    marqueeEl.setAttribute('scrollamount', '8');
 
     // Array of different marquee messages
     const marqueeMessages = [
@@ -14,65 +49,27 @@ export default function header () {
       "Own the moment in tailored elegance • From day to night, let your style do the talking |✨ Members-only sale coming soon •",
       "Upgrade your wardrobe! Get 10% off all classic suits this month. Dress sharp, feel sharper."
     ];
-
-    // Get current page name to potentially customize message
     const currentPage = window.location.pathname.split('/').pop() || '';
-    
-    // Select a marquee message (you can customize this logic)
     let selectedMessage;
     if (currentPage.includes('sleek_shop')) {
-      selectedMessage = marqueeMessages[1]; // Power looks better in silk
+      selectedMessage = marqueeMessages[1];
     } else if (currentPage.includes('Satin_shop')) {
-      selectedMessage = marqueeMessages[2]; // Classic isn't old
+      selectedMessage = marqueeMessages[2];
     } else if (currentPage.includes('P_shop')) {
-      selectedMessage = marqueeMessages[3]; // Real men tailor their legacy
+      selectedMessage = marqueeMessages[3];
     } else if (currentPage.includes('N_shop')) {
-      selectedMessage = marqueeMessages[4]; // Hey there stylish human
+      selectedMessage = marqueeMessages[4];
     } else if (currentPage.includes('E_shop')) {
-      selectedMessage = marqueeMessages[5]; // Own the moment
+      selectedMessage = marqueeMessages[5];
     } else if (currentPage.includes('C_shop')) {
-      selectedMessage = marqueeMessages[6]; // Upgrade your wardrobe
+      selectedMessage = marqueeMessages[6];
     } else {
-      // Default message for other pages
       selectedMessage = marqueeMessages[0];
     }
-  
-    root.innerHTML = `
-      <header class="top-header">
-      <a href="/" class="logo">Fashion House</a>
-        <input type="text" id= "site-search" placeholder="I'm shopping for..." class="search-bar" autocomplete="off">
-        <div id="search-dropdown" class="search-dropdown"></div>
-        <div class="icons">
-          <span>🔍</span>
-          <span>🛒</span>
-        </div>
-      </header>
-  
-      <nav class="main-nav">
-        <ul>
-        <li><a href="/">Home</a></li>
-          <li class="dropdown">
-            <a href="/html files/collection.html">Collections</a>
-            <ul class="dropdown-menu">
-              <li><a href="/html files/Traditional.html">Traditional</a></li>
-              <li><a href="/html files/formal.html">Formal</a></li>
-              <li><a href="/html files/casual.html">Casual</a></li>
-            </ul>
-          </li>
-          <li><a href="/html files/board-of-trustees.html">Board of Trustees</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="/html files/events.html">Events</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-        </ul>
-      </nav>
-      
-      <marquee class="page-marquee" behavior="scroll" direction="left" scrollamount="8">
-        ${selectedMessage}
-      </marquee>
-    `;
-  
-    document.body.insertAdjacentElement('afterbegin', root);
-  }
-  
-  header()
+    marqueeEl.textContent = selectedMessage;
+
+    // Inject directly into body
+    document.body.insertAdjacentElement('afterbegin', marqueeEl);
+    document.body.insertAdjacentElement('afterbegin', navEl);
+    document.body.insertAdjacentElement('afterbegin', headerEl);
+}

@@ -92,7 +92,7 @@ if (document.contains(heroSection)) {
 
 }
 
-
+/*
 document.addEventListener('DOMContentLoaded', function() {
   const dropdown = document.querySelector('.dropdown');
   const menu = dropdown.querySelector('.dropdown-menu');
@@ -114,3 +114,4 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 });
+*/

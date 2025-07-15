@@ -1,0 +1,164 @@
+
+/* Reset and base */
+body {
+    margin: 0;
+    font-family: 'Outfit', sans-serif;
+    background: #fff;
+    color: #333;
+}
+
+
+
+
+/*about page styling*/
+.about-section {
+    display: flex;
+    flex-direction: row;
+    /* row: image left, text right */
+    gap: 40px;
+    align-items: center;
+    /* vertically center */
+    padding: 40px 30px;
+    background-color: #111;
+    color: white;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-text {
+    max-width: 600px;
+    flex: 1;
+}
+
+.about-text h3 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.about-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #ddd;
+}
+
+/* Image container */
+.about-image-container {
+    width: 100%;
+    max-width: 600px;
+    flex: 1;
+}
+
+.about-image-container img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Learn More button */
+.btn-learn-more {
+    display: inline-block;
+    background-color: #333;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.btn-learn-more:hover {
+    background-color: #555;
+}
+
+/* Responsive: stack vertically on small screens */
+@media (max-width: 800px) {
+    .about-section {
+        flex-direction: column;
+        padding: 30px 15px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .about-text,
+    .about-image-container {
+        max-width: 100%;
+    }
+
+    .about-image-container {
+        margin-top: 20px;
+    }
+}
+.btn-learn-more {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-learn-more:hover {
+    background-color: #555;
+    transform: translateY(-2px);
+}
+
+.btn-learn-more:active {
+    transform: translateY(0);
+}
+
+/* Ibrahim About Page Styles */
+.ibrahim-about-section {
+  max-width: 960px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.ibrahim-about-section h2 {
+  color: black;
+  margin-bottom: 20px;
+}
+.ibrahim-about-section p {
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+.ibrahim-mission-vision {
+  margin-top: 40px;
+}
+.ibrahim-mission-vision h3 {
+  color: #222;
+  width: fit-content;
+  margin-bottom: 15px;
+}
+.ibrahim-mv-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.ibrahim-mv-item {
+  background-color: #eee;
+  padding: 15px;
+  flex: 1 1 200px;
+  border-radius: 6px;
+}
+.ibrahim-mv-item h4 {
+  margin-bottom: 5px;
+}
+@media (max-width: 700px) {
+  .ibrahim-mv-list {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+

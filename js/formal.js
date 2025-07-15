@@ -1,3 +1,5 @@
+//it is conflict with header.js
+/*
 document.addEventListener("DOMContentLoaded", function () {
   const dropdown = document.querySelector(".dropdown");
   if (!dropdown) return;
@@ -17,3 +19,4 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+*/

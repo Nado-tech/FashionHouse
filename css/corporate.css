@@ -1,4 +1,3 @@
-@import url('./index.css');
 
 /* Reset and base */
 
@@ -13,64 +12,8 @@ body {
     color: #333;
   }
   
-  /* Top header */
-  .top-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 30px;
-    background: #f8f8f8;
-    z-index: 1000;
-    /* so the top header stays on top of the page */
-    position: sticky;
-    top:0;
-  }
-
-  .logo {
-    font-weight: 700;
-    font-size: 24px;
-    text-decoration: none;
-    color: #111;
-    cursor: pointer;
-  }
   
-  .logo:hover {
-    opacity: 0.8;
-  }
-  
-  
-  /* .logo {
-    font-weight: 700;
-    font-size: 24px;
-    
-  } */
 
-  .marquee-container {
-    background: #111;
-    color: #fff;
-    overflow: hidden;
-    white-space: nowrap;
-    padding: 10px 0;
-  }
-
-  .marquee {
-    display: inline-block;
-    padding-left: 100%;
-    animation: slide-left 15s linear infinite;
-    font-weight: 500;
-  }
-
- 
-  .page-marquee {
-    background-color: #333;
-    color: #fff;
-    padding: 12px 0;
-    font-family: 'Outfit', sans-serif;
-    font-weight: 600;
-    font-size: 16px;
-    letter-spacing: 0.03em;
-    margin-bottom: -6px;
-  }
 
   .back-to-formal-collection {
     text-align: center;
@@ -95,30 +38,6 @@ body {
     color: white;
   }
   
-  
-  /* Navigation */
-  .main-nav {
-    background: #111;
-  }
-  
-  .main-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 10px 30px;
-    display: flex;
-    gap: 20px;
-    /* flex-wrap: wrap; so the navigation links wrap to the next line if they don't fit in one line */
-  }
-  
-  .main-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-    /* font-size: 16px; */
-    /* transition: all 0.3s ease; */
-    /* padding: 6px 8px; */
-  }
-
 
   /* --- FORMAL SECTION --- */
 .formal-section {
@@ -162,11 +81,14 @@ body {
   .formal-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 30px;
+    /* grid-template-columns: repeat(6, 1fr); One column for each item */
+    gap: 20px;
     justify-items: center;
   }
+
   
   .outfit-card {
+    position: relative;
     text-decoration: none;
     color: inherit;
     background: #fff;
@@ -300,9 +222,18 @@ body {
     min-width: 280px;
   }
   
-  .product-details h2 {
+  /* .product-details h2 {
     font-size: 28px;
     margin-bottom: 10px;
+  } */
+  .product-details h2 {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 2rem;
+    color: #222; /* or use a rich tone like #2c2c2c */
+    letter-spacing: 0.5px;
+    margin-bottom: 0.5rem;
   }
   
   .product-details .price {

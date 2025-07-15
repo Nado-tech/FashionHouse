@@ -1,109 +1,26 @@
+@import url('events.css');
 
-@media (max-width: 900px) {
-  .showcase-grid {
-    grid-template-columns: repeat(2, 1fr);
+html, body {
+  max-width: 100vw;
+}
+
+section:not(.hero):not(.jumbotron) {
+  padding: 32px 0;
+  margin: 0 auto 32px auto;
+  max-width: 1200px;
+  width: 100%;
+  box-sizing: border-box;
   }
-}
-@media (max-width: 600px) {
-  .showcase-grid {
-    grid-template-columns: 1fr;
-  }
-}
-body {
-  margin: 0;
-  font-family: 'Outfit', sans-serif;
-  background: #fff;
-  color: #333;
-}
 
-.top-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 30px;
-  background: #f8f8f8;
-}
-.image_event_link{
-  align-self: center;
-}
-.logo {
-  color: currentColor;
-  font-weight: 700;
-  font-size: 24px;
-  text-decoration: none;
-}
-
-.search-bar {
-  flex: 1;
-  margin: 0 20px;
-  padding: 8px 15px;
-  border: 1px solid #ccc;
-  border-radius: 20px;
-}
-
-.icons span {
-  margin-left: 10px;
-  cursor: pointer;
-}
-
-/* Navigation */
-.main-nav {
-  background: #111;
-}
-
-.main-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 10px 30px;
-  display: flex;
-  gap: 20px;
-  position: relative;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.main-nav ul li {
-  position: relative;
-}
-.dropdown {
-    position: relative;
-}
-.dropdown-menu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background: #222;
-  border-radius: 4px;
-  min-width: 160px;
-  z-index: 100;
+section.hero.jumbotron {
   padding: 0;
   margin: 0;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  max-width: none;
+  width: 100%;
 }
 
-.dropdown-menu li{
-    width:100%
-}
-
-.dropdown-menu a {
-  color: white;
-  text-decoration: none;
-  padding: 10px 16px;
-  display: block;
-}
-
-.dropdown-menu a:hover {
-  background: #444;
-}
-
-.dropdown:hover .dropdown-menu {
-  display: block;
-}
-.main-nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
+.image_event_link{
+  align-self: center;
 }
 
 /* Hero Section */
@@ -143,77 +60,13 @@ body {
 .hero-img {
   object-position: top;
   width: 100%;
-  max-height: 440px;
+  min-height: 400px;
+  max-height: 500px;
   object-fit: cover;
 }
 .hero h1 {
   font-size: 2.5rem;
   margin: 20px 0 10px;
-}
-.events {
-  padding: 40px 30px;
-}
-
-.event-grid {
-  display: flex;
-  gap: 20px;
-}
-
-.event-box {
-  flex: 1;
-  /*padding: 20px; */
-  background: #dad9d9;
-  text-align: center; 
-  border-radius: 8px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.event-box img {
-width: 90%;
-  max-height: 280px;
-  object-fit: cover;
-  align-self: center;
-  padding: 10px;
-}
-.upcoming_event_image {
-  width: 70%;
-  max-height: 400%;
-  object-fit: cover;
-  align-self: center;
-  padding: 10px;
-}
-
-.footer {
-  background: #111;
-  color: white;
-  padding: 40px 30px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.footer div {
-  width: 45%;
-}
-.more_events {
-  background-color: #676d67; 
-  color: #fff;
-  padding: 10px 20px; 
-  border: none; 
-  border-radius: 5px; 
-  cursor: pointer; 
-  font-size: 16px; 
-  transition: background-color 0.3s ease; 
-}
-
-.more_events a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.more_events:hover {
-  background-color: #3e8e41; 
 }
 
 .showcase-grid {
@@ -247,40 +100,25 @@ width: 90%;
 .showcase-card:hover img {
   transform: scale(1.08);
 }
-.search-dropdown {
-  position: absolute;
-  background: #fff;
-  border: 1px solid #ccc;
-  width: 250px;
-  max-height: 200px;
-  overflow-y: auto;
-  z-index: 1000;
-  display: none;
-  top: 60px;
-  left: 170px; 
-  border-radius: 4px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-}
-.search-dropdown .dropdown-item {
-  padding: 8px 12px;
-  cursor: pointer;
-}
-.search-dropdown .dropdown-item:hover {
-  background: #f2f2f2;
-}
-.search-highlight {
-  background: yellow;
-  color: #222;
-  border-radius: 2px;
-}
 
-.page-marquee {
-  background-color: #333;
-  color: #fff;
-  padding: 12px 0;
-  font-family: 'Outfit', sans-serif;
-  font-weight: 600;
-  font-size: 16px;
-  letter-spacing: 0.03em;
-  margin-bottom: -6px;
+@media (max-width: 700px) {
+  section:not(.hero):not(.jumbotron) {
+    padding: 18px 0;
+    margin: 0 auto 18px auto;
+    max-width: 100vw;
+  }
+  .showcase-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 10px 0;
+}
+  .showcase-card img {
+    height: 160px;
+  }
+}
+@media (max-width: 480px) {
+  .showcase-grid {
+    grid-template-columns: 1fr;
+}
+ 
 }
