@@ -1,5 +1,3 @@
-
-
 @media (max-width: 900px) {
   .showcase-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -24,7 +22,7 @@ body {
   padding: 15px 30px;
   background: #f8f8f8;
 }
-.image_event_link{
+.image_event_link {
   align-self: center;
 }
 .logo {
@@ -64,7 +62,7 @@ body {
   position: relative;
 }
 .dropdown {
-    position: relative;
+  position: relative;
 }
 .dropdown-menu {
   display: none;
@@ -77,11 +75,11 @@ body {
   z-index: 100;
   padding: 0;
   margin: 0;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.dropdown-menu li{
-    width:100%
+.dropdown-menu li {
+  width: 100%;
 }
 
 .dropdown-menu a {
@@ -133,7 +131,7 @@ body {
   flex: 1;
   /*padding: 20px; */
   background: #dad9d9;
-  text-align: center; 
+  text-align: center;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
@@ -141,7 +139,7 @@ body {
   justify-content: center;
 }
 .event-box img {
-width: 90%;
+  width: 90%;
   max-height: 400px;
   object-fit: cover;
   align-self: center;
@@ -167,18 +165,18 @@ width: 90%;
   width: 45%;
 }
 .more_events {
-  background-color: #676d67; 
+  background-color: #676d67;
   color: #fff;
-  padding: 10px 20px; 
-  border: none; 
-  border-radius: 5px; 
-  cursor: pointer; 
-  font-size: 16px; 
-  transition: background-color 0.3s ease; 
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
 }
 
 .more_events:hover {
-  background-color: #3e8e41; 
+  background-color: #3e8e41;
 }
 
 .showcase-grid {
@@ -191,8 +189,10 @@ width: 90%;
 .showcase-card {
   overflow: hidden;
   border-radius: 14px;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
-  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
 }
 
 .showcase-card img {
@@ -206,7 +206,7 @@ width: 90%;
 
 .showcase-card:hover {
   transform: translateY(-8px) scale(1.04);
-  box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
 }
 
 .showcase-card:hover img {
@@ -222,9 +222,9 @@ width: 90%;
   z-index: 1000;
   display: none;
   top: 60px;
-  left: 170px; 
+  left: 170px;
   border-radius: 4px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 .search-dropdown .dropdown-item {
   padding: 8px 12px;

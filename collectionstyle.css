@@ -54,46 +54,43 @@ body {
 
 /* Gallery Section Styling */
 #collection {
-    text-align: center;
-    padding: 40px 20px;
+  text-align: center;
+  padding: 40px 20px;
 }
 
 #collection h2 {
-    font-size: 2em;
-    margin-bottom: 10px;
+  font-size: 2em;
+  margin-bottom: 10px;
 }
 
 #collection p {
-    font-size: 1.1em;
-    margin-bottom: 30px;
-    color: #555;
+  font-size: 1.1em;
+  margin-bottom: 30px;
+  color: #555;
 }
 
 /* Image grid layout */
 .collection-gallery {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 /* Individual images */
 .collection-gallery img {
-    width: 300px;
-    height: 500px;
-    border-radius: 12px;
-    object-fit: cover;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
+  width: 300px;
+  height: 500px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
 }
 
 /* Hover effect */
 .collection-gallery img:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
-
-
-
 
 /* Footer */
 .footer {
